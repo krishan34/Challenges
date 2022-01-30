@@ -657,7 +657,7 @@ document.querySelector(".but").addEventListener("click", function () {
     const [first, second] = row.toLowerCase().trim().split("_");
     const output = `${first}${second.replace(
       second[0],
-      second[0].toUpperCase().padEnd(25)
+      second[0].toUpperCase()
     )}`;
   }
 });
