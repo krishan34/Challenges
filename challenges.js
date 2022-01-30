@@ -620,34 +620,49 @@ for (const [min, event] of gameEvents) {
 }
 */
 // GOOD LUCK �
+// The Complete JavaScript Course 19
+// Coding Challenge #4
+
+// Write a program that receives a list of variable names written in underscore_case and convert them to camelCase.
+// The input will come from a textarea inserted into the DOM (see code below to insert the elements), and conversion will happen when the button is pressed. Test data (pasted to textarea, including spaces):
 /*
- The Complete JavaScript Course 19
-Coding Challenge #4
-Write a program that receives a list of variable names written in underscore_case 
-and convert them to camelCase.
-The input will come from a textarea inserted into the DOM (see code below to 
-insert the elements), and conversion will happen when the button is pressed.
-Test data (pasted to textarea, including spaces):
 underscore_case
 first_name
 Some_Variable 
- calculate_AGE
+calculate_AGE
 delayed_departure
-Should produce this output (5 separate console.log outputs):
+// Should produce this output (5 separate console.log outputs):
 underscoreCase ✅
 firstName ✅✅
 someVariable ✅✅✅
 calculateAge ✅✅✅✅
 delayedDeparture ✅✅✅✅✅
-Hints:
-§ Remember which character defines a new line in the textarea � § The solution only needs to work for a variable made out of 2 words, like a_b
-§ Start without worrying about the ✅. Tackle that only after you have the variable 
-name conversion working � § This challenge is difficult on purpose, so start watching the solution in case 
-you're stuck. Then pause and continue!
-Afterwards, test with your own test data!
-GOOD LUCK �
- document.body.append(document.createElement('textarea'));
- document.body.append(document.createElement('button'));
+// Hints:
+// 
+§ Remember which character defines a new line in the textarea � 
+§ The solution only needs to work for a variable made out of 2 words, like a_b 
+§ Start without worrying about the ✅. 
+Tackle that only after you have the variable name conversion working � 
+§ This challenge is difficult on purpose, so start watching the solution in case you're stuck. Then pause and continue!
+// Afterwards, test with your own test data!
+// GOOD LUCK �
+*/
+// document.body.append(document.createElement("textarea"));
+// document.body.append(document.createElement("button"));
+
+document.querySelector(".but").addEventListener("click", function () {
+  const text = document.querySelector(".textA").value;
+  const rows = text.split("\n");
+  for (const row of rows) {
+    const [first, second] = row.toLowerCase().trim().split("_");
+    const output = `${first}${second.replace(
+      second[0],
+      second[0].toUpperCase().padEnd(25)
+    )}`;
+  }
+});
+
+/*
 The Complete JavaScript Course 20
 A Closer Look at Functions
 Coding Challenge #1
@@ -693,6 +708,8 @@ GOOD LUCK �
  // This generates [0, 0, 0, 0]. More in the next section!
  answers: new Array(4).fill(0),
  };
+
+
 The Complete JavaScript Course 22
 Coding Challenge #2
 This is more of a thinking challenge than a coding challenge �
@@ -708,6 +725,7 @@ and what that means for the variables involved in this example.
  header.style.color = 'red';
  })();
 GOOD LUCK �
+
 The Complete JavaScript Course 23
 Working With Arrays
 Coding Challenge #1
