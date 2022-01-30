@@ -647,18 +647,19 @@ Tackle that only after you have the variable name conversion working �
 // Afterwards, test with your own test data!
 // GOOD LUCK �
 */
-// document.body.append(document.createElement("textarea"));
-// document.body.append(document.createElement("button"));
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
 
-document.querySelector(".but").addEventListener("click", function () {
-  const text = document.querySelector(".textA").value;
+document.querySelector("button").addEventListener("click", function () {
+  const text = document.querySelector("textarea").value;
   const rows = text.split("\n");
-  for (const row of rows) {
+  for (const [i, row] of rows.entries()) {
     const [first, second] = row.toLowerCase().trim().split("_");
     const output = `${first}${second.replace(
       second[0],
       second[0].toUpperCase()
     )}`;
+    console.log(`${output.padEnd(20, " ")} ${"✅".repeat(i + 1)}`);
   }
 });
 
