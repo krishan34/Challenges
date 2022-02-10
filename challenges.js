@@ -1,5 +1,5 @@
-// Challenge 1
 /*
+Challenge 1
 Mark and John are trying to compare their BMI (Body Mass Index), which is 
 calculated using the formula:
 BMI = mass / height ** 2 = mass / (height * height) (mass in kg 
@@ -13,18 +13,18 @@ m tall
 Your tasks:
 
 
-// 1. Store Mark's and John's mass and height in variables
+1. Store Mark's and John's mass and height in variables
 const markMass = 95;
 const markHeight = 1.88;
 const johnMass = 85;
 const johnHeight = 1.76;
-// 2. Calculate both their BMIs using the formula (you can even implement both versions)
+2. Calculate both their BMIs using the formula (you can even implement both versions)
 const markBMI = markMass / markHeight ** 2;
 const johnBMI = johnMass / johnHeight ** 2;
 
 console.log(markBMI, johnBMI);
 
-// 3. Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
+3. Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
 
 const markHigherBMI = markBMI > johnBMI;
 
@@ -34,7 +34,7 @@ if (markHigherBMI) {
   console.log("John has a higher BMI than Mark");
 }
 
-// coding challenge 2
+coding challenge 2
 
 Use the BMI example from Challenge #1, and the code you already wrote, and 
 improve it.
@@ -42,7 +42,7 @@ Hint: Use an if/else statement �
 
 Your tasks:
 
-// 1. Print a nice output to the console, saying who has the higher BMI. The message is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+1. Print a nice output to the console, saying who has the higher BMI. The message is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
 
 if (markBMI > johnBMI) {
   console.log("Mark has a higher BMI than john");
@@ -50,7 +50,7 @@ if (markBMI > johnBMI) {
   console.log("John has a higher BMI than Mark");
 }
 
-// 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
 
 if (markBMI > johnBMI) {
   console.log(`Mark's BMI ${markBMI} is higher than john's ${johnBMI}`);
@@ -58,12 +58,12 @@ if (markBMI > johnBMI) {
   console.log(`John's BMI ${johnBMI} is higher than Mark ${markBMI}`);
 }
 
-// Coding Challenge #3
+Coding Challenge #3
 
-// Test data:
-//  § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
-// § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
-// § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+Test data:
+ § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+§ Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+§ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
 // There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
 
@@ -85,7 +85,7 @@ if (dolphinsAvg > KoalasAvg) {
   console.log("koals Win");
 }
 
-// 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. Hint: Use a logical operator to test for minimum score, as well as multiple else-if blocks
+3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. Hint: Use a logical operator to test for minimum score, as well as multiple else-if blocks
 
 const dolphinScore = dolphinsAvg;
 const KoalasScore = KoalasAvg;
@@ -102,7 +102,7 @@ if (dolphinScore >= 100 && KoalasScore >= 100) {
   console.log("both team score below 100");
 }
 
-// 4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy
+4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy
 
 if (dolphinScore >= 100 && KoalasScore >= 100) {
   if (dolphinsAvg > KoalasAvg) {
@@ -119,32 +119,32 @@ if (dolphinScore >= 100 && KoalasScore >= 100) {
     } team score below 100`
   );
 }
-/*
-// Coding Challenge #4
 
-// Test data:
-// § Data 1: Test for bill values 275, 40 and 430
+Coding Challenge #4
 
-// Hints:
-// § To calculate 20% of a value, simply multiply it by 20/100 = 0.2 § Value X is between 50 and 300, if it's >= 50 && <= 300 �
+Test data:
+§ Data 1: Test for bill values 275, 40 and 430
 
-// Steven wants to build a very simple tip calculator for whenever he goes eating in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+Hints:
+§ To calculate 20% of a value, simply multiply it by 20/100 = 0.2 § Value X is between 50 and 300, if it's >= 50 && <= 300 �
 
-// Your tasks:
-// 1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement � (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
+Steven wants to build a very simple tip calculator for whenever he goes eating in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+Your tasks:
+1. Calculate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statement � (If it's easier for you, you can start with an if/else statement, and then try to convert it to a ternary operator!)
 
 let bill = 50;
 const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
 console.log(tip);
 
-// 2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value 316.25”
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). Example: “The bill was 275, the tip was 41.25, and the total value 316.25”
 
 console.log(
   `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
 );
-*/
-/*
+
+
 JavaScript Fundamentals – Part 2
 Coding Challenge #1
 
@@ -159,16 +159,17 @@ Test data:
 Hints:
 § To calculate average of 3 values, add them all together and divide by 3 § To check if number A is at least double number B, check for A >= 2 * B. 
 
-// 1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
+1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
 
 const calcAverage = (a, b, c) => (a + b + c) / 3;
-// 2. Use the function to calculate the average for both teams
+
+2. Use the function to calculate the average for both teams
 
 const dolphinsAvg = calcAverage(44, 23, 71);
 const koalasAvg = calcAverage(65, 54, 49);
 console.log(dolphinsAvg, koalasAvg);
 
-// 3. Create a function 'checkWinner' that takes the average score of each team as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, according to the rule above. Example: "Koalas win (30 vs. 13)"
+3. Create a function 'checkWinner' that takes the average score of each team as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner to the console, together with the victory points, according to the rule above. Example: "Koalas win (30 vs. 13)"
 
 const checkWinner = function (dolphinScore, koalasScore) {
   if (dolphinScore >= 2 * koalasScore) {
@@ -180,22 +181,22 @@ const checkWinner = function (dolphinScore, koalasScore) {
   }
 };
 
-// 4. Use the 'checkWinner' function to determine the winner for both Data 1 and Data 2
+4. Use the 'checkWinner' function to determine the winner for both Data 1 and Data 2
 
 checkWinner(dolphinsAvg, koalasAvg);
 
-// 5. Ignore draws this time
+5. Ignore draws this time
 
 
-// Coding Challenge #2
+Coding Challenge #2
 
-// Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
+Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
 
-// Test data: 125, 555 and 44
-// Hint: Remember that an array needs a value in each position, and that value can actually be the returned value of a function! So you can just call a function as array values (so don't store the tip values in separate variables first, but right in the new
+Test data: 125, 555 and 44
+Hint: Remember that an array needs a value in each position, and that value can actually be the returned value of a function! So you can just call a function as array values (so don't store the tip values in separate variables first, but right in the new
 
-// Your tasks:
-// 1. Write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip, calculated based on the rules above (you can check out the code from first tip calculator challenge if you need to). Use the function type you like the most. Test the function using a bill value of 100
+Your tasks:
+1. Write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip, calculated based on the rules above (you can check out the code from first tip calculator challenge if you need to). Use the function type you like the most. Test the function using a bill value of 100
 
 function calcTip(bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -203,19 +204,19 @@ function calcTip(bill) {
 
 console.log(calcTip(40));
 
-// 2. And now let's use arrays! So create an array 'bills' containing the test data below
+2. And now let's use arrays! So create an array 'bills' containing the test data below
 
 const bills = [125, 555, 44];
 
 console.log(bills);
 
-// 3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before
+3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before
 
 const tip = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 
 console.log(tip);
 
-// 4. Bonus: Create an array 'total' containing the total values, so the bill + tip array) �
+4. Bonus: Create an array 'total' containing the total values, so the bill + tip array) �
 
 const total = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]];
 console.log(total);
@@ -230,24 +231,24 @@ const krish = {
 
 console.log(krish);
 
-// dynameic challenge
-// krish has 3 friends, but his best friend is Rim.
+dynameic challenge
+krish has 3 friends, but his best friend is Rim.
 
 console.log(
   `${krish.firstName} has ${krish.friends.length} friends but his best friend is ${krish.friends[0]}`
 );
 
-// Coding Challenge #3
+Coding Challenge #3
 
-/*Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
 Your tasks:
 
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m 
 tall.
 
-*/
-// 1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
-/*
+
+1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+
 const markDetails = {
   fullName: "Mark Miller",
   mass: 78,
@@ -260,7 +261,7 @@ const johnDetails = {
   height: 1.95,
 };
 
-// 2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method
 
 const markDetails = {
   fullName: "Mark Miller",
@@ -287,7 +288,7 @@ johnDetails.calcBMI();
 // without object call bmi doesnt return.
 console.log(markDetails.bmi, johnDetails.bmi);
 
-// 3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
+3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 
 if (markDetails.calcBMI() > johnDetails.calcBMI()) {
   console.log(
@@ -298,8 +299,8 @@ if (markDetails.calcBMI() > johnDetails.calcBMI()) {
     `${johnDetails.fullName} BMI (${johnDetails.bmi}) is higher than ${markDetails.fullName} (${markDetails.bmi})!`
   );
 }
-*/
-/*
+
+
 Coding Challenge #4
 
 Let's improve Steven's tip calculator even more, this time using loops!Your tasks:
@@ -309,15 +310,15 @@ Hints: Call ‘calcTip ‘in the loop and use the push method to add values to t
 tips and totals arrays �
 
 
-// 1. Create an array 'bills' containing all 10 test bill values
+1. Create an array 'bills' containing all 10 test bill values
 
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 
-// 2. Create empty arrays for the tips and the totals ('tips' and 'totals')
+2. Create empty arrays for the tips and the totals ('tips' and 'totals')
 const tips = [];
 const totals = [];
 
-// 3. Use the 'calcTip' function we wrote before (no need to repeat) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
+3. Use the 'calcTip' function we wrote before (no need to repeat) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 };
@@ -330,16 +331,16 @@ for (let i = 0; i < bills.length; i++) {
 
 console.log(bills, tips, totals);
 
-// Bonus:
-// 4. Bonus: Write a function 'calcAverage' which takes an array called 'arr' as an argument. This function calculates the average of all numbers in the given array. This is a difficult challenge (we haven't done this before)! Here is how to
+Bonus:
+4. Bonus: Write a function 'calcAverage' which takes an array called 'arr' as an argument. This function calculates the average of all numbers in the given array. This is a difficult challenge (we haven't done this before)! Here is how to
 
-// solve it:
+solve it:
 
-// 4.1. First, you will need to add up all values in the array. To do the addition, start by creating a variable 'sum' that starts at 0. Then loop over the array using a for loop. In each iteration, add the current value to the 'sum' variable. This way, by the end of the loop, you have all values added together
+4.1. First, you will need to add up all values in the array. To do the addition, start by creating a variable 'sum' that starts at 0. Then loop over the array using a for loop. In each iteration, add the current value to the 'sum' variable. This way, by the end of the loop, you have all values added together
 
-// 4.2. To calculate the average, divide the sum you calculated before by the length of the array (because that's the number of elements)
+4.2. To calculate the average, divide the sum you calculated before by the length of the array (because that's the number of elements)
 
-// 4.3. Call the function with the 'totals' array GOOD LUCK �
+4.3. Call the function with the 'totals' array GOOD LUCK �
 
 const calcAverage = function (arr) {
   let sum = 0;
@@ -350,18 +351,18 @@ const calcAverage = function (arr) {
 };
 console.log(calcAverage(tips));
 
-// Developer Skills & Editor Setup
+Developer Skills & Editor Setup
 
-// Coding Challenge #1
-// Given an array of forecasted maximum temperatures, the thermometer displays a string with the given temperatures.
-// Example: [17, 21, 23] will print "... 17ºC in 1 days ... 21ºC in 2 days ... 23ºC in 3 days ..."
-// Your tasks:
+Coding Challenge #1
+Given an array of forecasted maximum temperatures, the thermometer displays a string with the given temperatures.
+Example: [17, 21, 23] will print "... 17ºC in 1 days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+Your tasks:
 
-// Test data:
+Test data:
 const data1 = [17, 21, 23];
 const data2 = [12, 5, -5, 0, 4];
 
-// 1. Create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console. Try it with both test datasets.
+1. Create a function 'printForecast' which takes in an array 'arr' and logs a string like the above to the console. Try it with both test datasets.
 
 const printForecast = function (arr) {
   let str = "";
@@ -373,13 +374,12 @@ const printForecast = function (arr) {
 
 printForecast(data2);
 
-// 2. Use the problem-solving framework: Understand the problem and break it up into sub-problems!
+2. Use the problem-solving framework: Understand the problem and break it up into sub-problems!
 
 // transform an array into string
 // how to change the days number automatically?
 // How to handle null and negative values.
-*/
-/*
+
 The Complete JavaScript Course 14
 JavaScript in the Browser: DOM and Events
 Coding Challenge #1
@@ -393,7 +393,7 @@ fields
 4. Also restore the original background color (#222) and number width (15rem)
 GOOD LUCK �
 
-/*
+
 The Complete JavaScript Course 15
 Data Structures, Modern Operators and Strings
 Coding Challenge #1
@@ -487,13 +487,13 @@ team1 > team2 &&
 
 // 6.: First, use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Then, call the function again with players from game.scored
 
-// GOOD LUCK �
+GOOD LUCK �
 
-// The Complete JavaScript Course 16
+The Complete JavaScript Course 16
 
-// The Complete JavaScript Course 17
-// Coding Challenge #2
-// Let's continue with our football betting app! Keep using the 'game' variable from before.
+The Complete JavaScript Course 17
+Coding Challenge #2
+Let's continue with our football betting app! Keep using the 'game' variable from before.
 // Your tasks:
 
 const game = {
@@ -566,7 +566,7 @@ for (const player of game.scored) {
 }
 console.log(scorers);
 
-/*{
+{
  Gnarby: 1,
  Hummels: 1,
  Lewandowski: 2
@@ -618,14 +618,14 @@ console.log(
 for (const [min, event] of gameEvents) {
   console.log(`[${min <= 45 ? "FIRST HALF" : "SECOND HALF"}] ${min}: ${event}`);
 }
-*/
+
 // GOOD LUCK �
 // The Complete JavaScript Course 19
 // Coding Challenge #4
 
 // Write a program that receives a list of variable names written in underscore_case and convert them to camelCase.
 // The input will come from a textarea inserted into the DOM (see code below to insert the elements), and conversion will happen when the button is pressed. Test data (pasted to textarea, including spaces):
-/*
+
 underscore_case
 first_name
 Some_Variable 
@@ -816,7 +816,7 @@ checkDogs(dogsJulia, dogsKate);
 //§ Data 2: Julia's data [9, 16, 6, 8, 3], Kate's data [10, 5, 6, 1, 4]
 
 //Hints: Use tools from all lectures in this section so far �
-*/
+
 //GOOD LUCK �
 
 // The Complete JavaScript Course 24
@@ -849,7 +849,6 @@ console.log(avg1, avg2);
 
 // 4. Run the function for both test datasets
 
-/*
 Coding Challenge #3
 Rewrite the 'calcAverageHumanAge' function from Challenge #2, but this time 
 as an arrow function, and using chaining!
